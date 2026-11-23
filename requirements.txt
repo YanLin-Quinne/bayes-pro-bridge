@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121
+transformers==5.9.0
+tokenizers==0.22.2
+huggingface-hub==1.16.0
+safetensors==0.7.0
+accelerate==1.13.0
+datasets==4.8.5
+sentencepiece==0.2.1
+fire==0.7.1
+numpy==2.2.6
+tqdm==4.67.3
+tomli==2.4.0; python_version < "3.11"

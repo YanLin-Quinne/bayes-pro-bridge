@@ -1,0 +1,40 @@
+{
+  "backbones": {
+    "llama3_2_1b": "llama3.2-1b",
+    "llama3_2_3b": "llama3.2-3b",
+    "qwen2_1_5b_instruct": "qwen2-1.5b-instruct",
+    "qwen3_4b_base": "qwen3-4b-base"
+  },
+  "betas": ["0", "0.01", "0.1", "0.2", "0.3", "1"],
+  "run": "{name}_beta{beta}_m{m}",
+  "final": "{run}/final",
+  "resources": "{run}/resources.json",
+  "train_log": "{run}/train.log",
+  "selected": {
+    "backbone": "llama3_2_3b",
+    "betas": ["0", "0.1", "0.3", "1"],
+    "evaluation": "{run}/selected/checkpoint-*",
+    "candidate_steps": [5000, 10000, 15000, 20000, 25000, 30000]
+  },
+  "sequence": {
+    "zero": {
+      "qseq": "llama3.2-3b_renyi0.8_zero_m8/final_qseq",
+      "qcl": "llama3.2-3b_renyi0.8_zero_m8/final_qcl"
+    },
+    "auto": {
+      "qseq": "llama3.2-3b_renyi0.8_auto_m8/final_qseq",
+      "qcl": "llama3.2-3b_renyi0.8_auto_m8/final_qcl"
+    }
+  },
+  "train_nll": {
+    "backbone": "qwen3_4b_base",
+    "npz": "{run}/train_set_audit/train_nll_artifact.npz"
+  },
+  "pre_adaptation": "pre_adaptation/{name}/summary.json",
+  "zero_shot": "{name}_zero_shot/{dataset}/summary.json",
+  "m_ablation": {
+    "backbones": ["llama3_2_3b", "qwen3_4b_base"],
+    "particles": [4, 8, 16],
+    "betas": ["0", "0.1"]
+  }
+}

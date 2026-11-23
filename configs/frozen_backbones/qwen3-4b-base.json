@@ -1,0 +1,19 @@
+{
+  "key": "qwen3_4b_base",
+  "model_id": "Qwen/Qwen3-4B-Base",
+  "revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "prompt_family": "alpaca",
+  "tokenizer_setup": "pad_eos",
+  "expected_pad_token_id": 151643,
+  "expected_label_token_ids": {
+    "A": 32,
+    "B": 33,
+    "C": 34,
+    "D": 35,
+    "E": 36
+  },
+  "attn_implementation": "sdpa",
+  "historical_trainer": "finetune_joint_ensemble_PRO_branch_parallel_classlabel_convex_qwen3_20260719.py (sha256 867a4ae38e5c9c2ac4ee581aeda0f330f7729d8f2bbe6946e0871ea61324b3c1)",
+  "trained_in_paper": true,
+  "revision_note": "pinned in manifests/models.json and in the historical trainer"
+}

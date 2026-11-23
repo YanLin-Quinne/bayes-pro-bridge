@@ -1,0 +1,5 @@
+# Tables, figures and Case Study 1 (CPU, Python 3.10 to 3.12), see docs/REPRODUCIBILITY.md.
+numpy==2.0.1
+scipy==1.16.1; python_version >= "3.11"
+scipy==1.15.3; python_version < "3.11"
+matplotlib==3.10.6

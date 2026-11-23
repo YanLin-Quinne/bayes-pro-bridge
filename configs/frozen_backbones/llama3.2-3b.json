@@ -1,0 +1,13 @@
+{
+  "key": "llama3_2_3b",
+  "model_id": "meta-llama/Llama-3.2-3B",
+  "revision": "13afe5124825b4f3751f836b40dafda64c1ed062",
+  "prompt_family": "alpaca",
+  "tokenizer_setup": "pad_zero",
+  "expected_pad_token_id": 0,
+  "expected_label_token_ids": null,
+  "attn_implementation": null,
+  "historical_trainer": "finetune_joint_ensemble_PRO_branch_parallel_classlabel_convex.py (sha256 90251da23925fd7fe2b947109ae6a64d83a1e339bb10c76c43e11249a7a8517a)",
+  "trained_in_paper": true,
+  "revision_note": "pinned in manifests/models.json; historical July revision not established"
+}

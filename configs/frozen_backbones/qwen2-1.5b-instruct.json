@@ -1,0 +1,19 @@
+{
+  "key": "qwen2_1_5b_instruct",
+  "model_id": "Qwen/Qwen2-1.5B-Instruct",
+  "revision": "ba1cf1846d7df0a0591d6c00649f57e798519da8",
+  "prompt_family": "qwen2_chatml",
+  "tokenizer_setup": "pad_eos",
+  "expected_pad_token_id": 151643,
+  "expected_label_token_ids": {
+    "A": 32,
+    "B": 33,
+    "C": 34,
+    "D": 35,
+    "E": 36
+  },
+  "attn_implementation": "sdpa",
+  "historical_trainer": "finetune_joint_ensemble_PRO_branch_parallel_classlabel_convex_qwen2_instruct.py (sha256 4429ecc52d96b057713140a1089fc925d63ef7ee849d4fe892347dfe693f1ad3)",
+  "trained_in_paper": true,
+  "revision_note": "pinned in manifests/models.json and in the historical trainer"
+}
